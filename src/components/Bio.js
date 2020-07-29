@@ -39,47 +39,18 @@ export default function Bio() {
   return (
     <>
       <div className="flex sm:items-center mt-8 mb-6 sm:flex-row flex-col items-start">
-        <Img
-          className="flex-shrink-0 w-12 h-12 mb-4 sm:mb-0 mr-4 rounded-full"
-          fixed={data.avatar.data.fixed}
-          alt="Profile"
-        />
         <p className="mb-0 lg:text-lg text-gray-400">
-          Hi, I'm a full-stack developer. Working on products that people love
-          using gets me up in the morning. Currently building{" "}
-          <ExternalLink href="https://dev.kiyomi.io">kiyomi.io</ExternalLink>
+          fizzy drinks and fizzy thoughts
         </p>
       </div>
+
       <div className="mb-8">
         <div
           className="grid gap-4 grid-flow-col"
           style={{ width: "max-content" }}
         >
-          <ExternalLink
-            href={`https://github.com/xetera`}
-            className="flex items-center text-sm"
-          >
-            <Img
-              fixed={data.github.data.fixed}
-              alt="github"
-              className="mr-3 mb-0 rounded-full"
-            />{" "}
-            Github
-          </ExternalLink>
-          <ExternalLink
-            href={`https://twitter.com/${data.site.siteMetadata.social.twitter}`}
-            className="flex items-center text-sm"
-          >
-            <Img
-              name="twitter.png"
-              alt="twitter"
-              className="mr-3 mb-0 rounded-full"
-              fixed={data.twitter.data.fixed}
-            />{" "}
-            Twitter
-          </ExternalLink>
         </div>
       </div>
-    </>
+</>
   )
 }
